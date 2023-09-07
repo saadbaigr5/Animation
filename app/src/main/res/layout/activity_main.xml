@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnalpha"
+        android:layout_width="wrap_content"
+        android:textFontWeight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/Alpha" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textFontWeight="1"
+        android:layout_toRightOf="@id/btnalpha"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text="@string/Rotation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:textFontWeight="1"
+        android:layout_toRightOf="@id/btnRotation"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/translate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnscale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textFontWeight="1"
+        android:layout_toRightOf="@id/btnTranslate"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text="@string/Scale" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is animation"
+        android:textSize="34dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/TxtAnim"
+        />
+
+
+</RelativeLayout>
